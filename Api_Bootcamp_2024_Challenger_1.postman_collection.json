@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "f33e5d2b-be65-4f33-b635-28fde0a0e027",
+		"name": "Api Bootcamp 2024 Challenger 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30704327"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Usuario\":\"carlos.alvarez.manzo2@gmail.com\",\n    \"Nombres\":\"carlos alvarez manzo\",\n    \"Password\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/ping",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Usuario\":\"carlos.alvarez.manzo@gmail.com\",\n    \"Nombres\":\"Carlos Alvarez Manzo\",\n    \"Password\":\"1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/createPerson",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"createPerson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":\"benjamin.alvarez2.acevedo@gmail.com\",\n    \"password\":\"holaMundo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/loginUser",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listTareasUsuario",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"VG0epuSEw9xGfq1T\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/listTareasUsuario",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"listTareasUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TituloTarea\":\"Tarea segundo dia ejemplo\",\n    \"DescripcionTarea\":\"lalallaal appapapa amammam\",\n    \"token\":\"VG0epuSEw9xGfq1T\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/insertarTarea",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"insertarTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marcarTareaFinal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ComentarioFinal\":\"Adio tarea 1 presentacion bootcamp challengr OLITA\",\n    \"RandomTarea\":\"PHU29FvkXmqYCAuj\",\n    \"token\":\"VG0epuSEw9xGfq1T\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://codigo-alfa.cl/bootcamp-socius2024/Api/marcarTareaFinal",
+					"protocol": "https",
+					"host": [
+						"codigo-alfa",
+						"cl"
+					],
+					"path": [
+						"bootcamp-socius2024",
+						"Api",
+						"marcarTareaFinal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
